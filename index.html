@@ -118,40 +118,50 @@
         </div>
         <div class="vehicle__container__car">
           <div class="vehicle__container__car-select">
-            <button class="button-active button" id="btn1">Range Rover</button>
-            <button class="button" id="btn2">Random car long name</button>
-            <button class="button" id="btn3">Range Rover</button>
-            <button class="button" id="btn3">Range Rover</button>
-            <button class="button" id="btn3">Range Rover</button>
+            <button class="button-active button" id="btn1">BMW M5</button>
+            <button class="button" id="btn2">Audi A4</button>
+            <button class="button" id="btn3">Opel Astra</button>
+            <button class="button" id="btn4">Chevrolet Camaro</button>
+            <button class="button" id="btn5">Volkswagen Passat</button>
+            <button class="button" id="btn6">Range Rover Evoque</button>
           </div>
           <div class="vehicle__container__car-box">
             <div class="vehicle__container__car-img">
-              <img src="/images/hero-img.jpg" alt="Range Rover" />
+              <img id="car-img" src="/images/hero-img.jpg" alt="Range Rover" />
             </div>
             <div class="vehicle__container__car-desc">
-              <div class="vehicle__container__car-desc__price">
-                <span>$45</span> <span>per day</span>
+              <div class="vehicle__container__car-desc__price" id="price">
+                $25 per day
               </div>
               <div class="vehicle__container__car-desc__table">
-                <div class="vehicle__container__car-desc__table__col">
+                <div
+                  class="vehicle__container__car-desc__table__col"
+                  id="model"
+                >
                   <i class="fa-solid fa-car" style="color: #000000"></i>SUV
                 </div>
-                <div class="vehicle__container__car-desc__table__col">
+                <div
+                  class="vehicle__container__car-desc__table__col"
+                  id="transmission"
+                >
                   <i class="fa-solid fa-gauge" style="color: #000000"></i
                   >Automatic
                 </div>
-                <div class="vehicle__container__car-desc__table__col">
+                <div
+                  class="vehicle__container__car-desc__table__col"
+                  id="seats"
+                >
                   <i class="fa-solid fa-children" style="color: #000000"></i>5
                   People
                 </div>
-                <div class="vehicle__container__car-desc__table__col">
+                <div class="vehicle__container__car-desc__table__col" id="bags">
                   <i
                     class="fa-solid fa-suitcase-rolling"
                     style="color: #000000"
                   ></i
                   >4 Bags
                 </div>
-                <div class="vehicle__container__car-desc__table__col">
+                <div class="vehicle__container__car-desc__table__col" id="gas">
                   <i class="fa-solid fa-gas-pump" style="color: #000000"></i
                   >Gasoline
                 </div>
@@ -164,5 +174,6 @@
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
