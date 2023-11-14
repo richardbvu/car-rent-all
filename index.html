@@ -64,10 +64,39 @@
               no problems.
             </p>
             <div class="hero__content__buttons">
-              <a href="/" class="hero__content__buttons__rent-now">Rent Now</a>
-
+              <a href="#vehicle" class="hero__content__buttons__rent-now"
+                >Rent Now &nbsp;
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <style>
+                    svg {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <path
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                  />
+                </svg>
+              </a>
               <a href="/" class="hero__content__buttons__learn-more"
-                >Learn More
+                >Learn More &nbsp;
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height=".75em"
+                  viewBox="0 0 384 512"
+                >
+                  <style>
+                    svg {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <path
+                    d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -76,6 +105,62 @@
             alt="Car image"
             class="hero__content__hero-img"
           />
+        </div>
+      </div>
+    </section>
+    <!-- VEHICLE SECTION -->
+    <section class="vehicle__section" id="vehicle">
+      <div class="vehicle__container">
+        <div class="vehicle__container__title">
+          <h4>Vehicle Models</h4>
+          <h1>Rent your vehicle now</h1>
+          <p>Choose any car you wish and begin your trip</p>
+        </div>
+        <div class="vehicle__container__car">
+          <div class="vehicle__container__car-select">
+            <button class="button-active button" id="btn1">Range Rover</button>
+            <button class="button" id="btn2">Random car long name</button>
+            <button class="button" id="btn3">Range Rover</button>
+            <button class="button" id="btn3">Range Rover</button>
+            <button class="button" id="btn3">Range Rover</button>
+          </div>
+          <div class="vehicle__container__car-box">
+            <div class="vehicle__container__car-img">
+              <img src="/images/hero-img.jpg" alt="Range Rover" />
+            </div>
+            <div class="vehicle__container__car-desc">
+              <div class="vehicle__container__car-desc__price">
+                <span>$45</span> <span>per day</span>
+              </div>
+              <div class="vehicle__container__car-desc__table">
+                <div class="vehicle__container__car-desc__table__col">
+                  <i class="fa-solid fa-car" style="color: #000000"></i>SUV
+                </div>
+                <div class="vehicle__container__car-desc__table__col">
+                  <i class="fa-solid fa-gauge" style="color: #000000"></i
+                  >Automatic
+                </div>
+                <div class="vehicle__container__car-desc__table__col">
+                  <i class="fa-solid fa-children" style="color: #000000"></i>5
+                  People
+                </div>
+                <div class="vehicle__container__car-desc__table__col">
+                  <i
+                    class="fa-solid fa-suitcase-rolling"
+                    style="color: #000000"
+                  ></i
+                  >4 Bags
+                </div>
+                <div class="vehicle__container__car-desc__table__col">
+                  <i class="fa-solid fa-gas-pump" style="color: #000000"></i
+                  >Gasoline
+                </div>
+                <a href="" class="vehicle__container__car-desc__reserve-now"
+                  >RESERVE NOW</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
