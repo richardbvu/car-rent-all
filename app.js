@@ -1,3 +1,5 @@
+// VEHICLE
+
 document.getElementById("btn1").onclick = function () {
   var img1 = document.getElementById("car-img");
   img1.src = "/images/img1.jpg";
@@ -171,3 +173,17 @@ document.getElementById("btn6").onclick = function () {
   gas.innerHTML =
     "<i class='fa-solid fa-gas-pump' style='color: #000000'></i>" + "Gasoline";
 };
+
+// BOOKING
+
+const modal = document.querySelector("[data-modal]");
+const openButton = document.querySelector("[data-modal-open]");
+const closeButton = document.querySelector("[data-modal-close]");
+
+openButton.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+  modal.close();
+});
