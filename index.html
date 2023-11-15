@@ -178,6 +178,52 @@
     </section>
     <!-- BOOKING SECTION -->
     <section class="booking__section" id="booking-section">
+      <dialog data-modal class="booking__modal">
+        <div class="booking__modal__container">
+          <div class="booking__modal__container__title">
+            <h2>Complete your reservation</h2>
+          </div>
+          <div class="booking__modal__container__message">
+            <h4>
+              <i class="fa-solid fa-circle-exclamation"></i>After completion:
+              You will receive a rental voucher with a toll-free customer
+              support number
+            </h4>
+            <p>Please bring your voucher to the rental front desk</p>
+          </div>
+          <div class="booking__modal__container__car">
+            <div class="booking__modal__container__car__info">
+              <div class="booking__modal__container__car__info__dates">
+                <h5>Location & Date</h5>
+                <span>
+                  <div>
+                    <h5>
+                      <i
+                        class="fa-solid fa-location-dot"
+                        style="color: #000000"
+                      ></i
+                      >Pick-up Location
+                    </h5>
+                    <p>
+                      Dynamic location here
+                      <input type="time" class="input-time" />
+                    </p>
+                  </div>
+                </span>
+              </div>
+              <div class="booking__modal__container__car__info__dates"></div>
+              <div class="booking__modal__container__car__info__dates"></div>
+              <div class="booking__modal__container__car__info__dates"></div>
+            </div>
+            <div class="booking__modal__container__car__model"></div>
+          </div>
+          <div class="booking__modal__container__personal">
+            <button data-modal-close>Close</button>
+            <button type="submit">Reserve now</button>
+          </div>
+        </div>
+      </dialog>
+
       <div class="booking__container">
         <div class="booking__content">
           <div class="booking__content__box">
@@ -255,7 +301,7 @@
                 >
                 <input type="date" id="drop-off-time" value="11-14-2023" />
               </div>
-              <button type="submit">Search</button>
+              <button data-modal-open>Search</button>
             </form>
           </div>
         </div>
