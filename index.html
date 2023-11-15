@@ -127,18 +127,18 @@
           </div>
           <div class="vehicle__container__car-box">
             <div class="vehicle__container__car-img">
-              <img id="car-img" src="/images/hero-img.jpg" alt="Range Rover" />
+              <img id="car-img" src="/images/img1.jpg" alt="Range Rover" />
             </div>
             <div class="vehicle__container__car-desc">
               <div class="vehicle__container__car-desc__price" id="price">
-                $25 per day
+                $35 per day
               </div>
               <div class="vehicle__container__car-desc__table">
                 <div
                   class="vehicle__container__car-desc__table__col"
                   id="model"
                 >
-                  <i class="fa-solid fa-car" style="color: #000000"></i>SUV
+                  <i class="fa-solid fa-car" style="color: #000000"></i>Sports
                 </div>
                 <div
                   class="vehicle__container__car-desc__table__col"
@@ -151,7 +151,7 @@
                   class="vehicle__container__car-desc__table__col"
                   id="seats"
                 >
-                  <i class="fa-solid fa-children" style="color: #000000"></i>5
+                  <i class="fa-solid fa-children" style="color: #000000"></i>4
                   People
                 </div>
                 <div class="vehicle__container__car-desc__table__col" id="bags">
@@ -159,17 +159,104 @@
                     class="fa-solid fa-suitcase-rolling"
                     style="color: #000000"
                   ></i
-                  >4 Bags
+                  >3 Bags
                 </div>
                 <div class="vehicle__container__car-desc__table__col" id="gas">
                   <i class="fa-solid fa-gas-pump" style="color: #000000"></i
                   >Gasoline
                 </div>
-                <a href="" class="vehicle__container__car-desc__reserve-now"
+                <a
+                  href="#booking-section"
+                  class="vehicle__container__car-desc__reserve-now"
                   >RESERVE NOW</a
                 >
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BOOKING SECTION -->
+    <section class="booking__section" id="booking-section">
+      <div class="booking__container">
+        <div class="booking__content">
+          <div class="booking__content__box">
+            <h2>Book a car</h2>
+            <p class="booking__content__box__error">All fields required!</p>
+            <p class="booking__content__box__confirm">
+              Booking complete. Confirmation has been sent to your email.
+            </p>
+            <form action="" class="booking__content__form">
+              <div class="booking__content__form__car">
+                <label for="car-select"
+                  ><i class="fa-solid fa-car-side"></i>Select your car</label
+                >
+                <select name="car-select" id="car-select">
+                  <option>Select your car</option>
+                  <option value="BMW M5">BMW M5</option>
+                  <option value="Audi A4">Audi A4</option>
+                  <option value="Opel Astra">Opel Astra</option>
+                  <option value="Chevrolet Camaro">Chevrolet Camaro</option>
+                  <option value="Volkswagen Passat">Volkswagen Passat</option>
+                  <option value="Range Rover Evoque">Range Rover Evoque</option>
+                </select>
+              </div>
+              <div class="booking__content__form__car">
+                <label for="pick-up"
+                  ><i
+                    class="fa-solid fa-location-dot"
+                    style="color: #000000"
+                  ></i
+                  >Pick up</label
+                >
+                <select name="pick-up" id="pick-up">
+                  <option>Select pick up location</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="San Diego">San Diego</option>
+                  <option value="Sacramento">Sacramento</option>
+                  <option value="Santa Barbara">Santa Barbara</option>
+                  <option value="Long Beach">Long Beach</option>
+                </select>
+              </div>
+              <div class="booking__content__form__car">
+                <label for="drop-off"
+                  ><i
+                    class="fa-solid fa-location-dot"
+                    style="color: #000000"
+                  ></i
+                  >Drop off</label
+                >
+                <select name="drop-off" id="drop-off">
+                  <option>Select drop off location</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="San Diego">San Diego</option>
+                  <option value="Sacramento">Sacramento</option>
+                  <option value="Santa Barbara">Santa Barbara</option>
+                  <option value="Long Beach">Long Beach</option>
+                </select>
+              </div>
+              <div class="booking__content__form__date">
+                <label for="pick-up-time"
+                  ><i
+                    class="fa-solid fa-calendar-days"
+                    style="color: #000000"
+                  ></i
+                  >Pick up time</label
+                >
+                <input type="date" id="pick-up-time" value="11-14-2023" />
+              </div>
+              <div class="booking__content__form__date">
+                <label for="drop-off-time"
+                  ><i
+                    class="fa-solid fa-calendar-days"
+                    style="color: #000000"
+                  ></i
+                  >Drop off time</label
+                >
+                <input type="date" id="drop-off-time" value="11-14-2023" />
+              </div>
+              <button type="submit">Search</button>
+            </form>
           </div>
         </div>
       </div>
