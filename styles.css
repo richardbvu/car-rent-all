@@ -255,7 +255,7 @@ html {
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .vehicle__container__title {
@@ -279,7 +279,7 @@ html {
 }
 
 .vehicle__container__car {
-  background: hotpink;
+  /* background: hotpink; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -294,7 +294,7 @@ html {
   gap: 0.1rem;
   transform: all 0.3s;
   /* margin-right: 2.5rem; */
-  background: coral;
+  /* background: coral; */
 }
 
 .vehicle__container__car-select button {
@@ -350,7 +350,7 @@ html {
 }
 
 .vehicle__container__car-desc {
-  background-color: darkolivegreen;
+  /* background-color: darkolivegreen; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -403,5 +403,144 @@ html {
 }
 
 .vehicle__container__car-desc__reserve-now:hover {
+  box-shadow: var(--main-color-shadow-hover);
+}
+
+/* BOOKING  */
+
+.booking__section {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 70vh;
+}
+
+.booking__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 5rem;
+  background: aquamarine;
+  padding: 1rem;
+}
+
+.booking__content {
+  display: flex;
+  width: 100%;
+  position: relative;
+  background: chocolate;
+  padding: 1rem;
+}
+
+.booking__content__box {
+  background: hotpink;
+  width: 100%;
+  padding: 5rem;
+}
+
+.booking__content__box h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.booking__content__box__error {
+  display: none;
+}
+
+.booking__content__box__confirm {
+  display: none;
+  font-size: 1.2rem;
+  background: rgba(46, 179, 34, 0.9);
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.booking__content__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /* justify-content: space-around; */
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  background: orange;
+}
+
+.booking__content__form__car {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__content__form__car label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.booking__content__form__car i {
+  padding-right: 0.5rem;
+}
+
+.booking__content__form__car label::after {
+  content: " *";
+  color: rgba(255, 0, 0);
+}
+
+.booking__content__form__car select {
+  color: var(--text-alt-color);
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+.booking__content__form__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__content__form__date label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.booking__content__form__date i {
+  padding-right: 0.5rem;
+}
+
+.booking__content__form__date label::after {
+  content: " *";
+  color: rgba(255, 0, 0);
+}
+
+.booking__content__form__date input {
+  color: var(--text-alt-color);
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--text-alt-color);
+}
+
+.booking__content__form button {
+  color: white;
+  background: var(--main-color);
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  /* margin-top: 4rem; */
+  align-self: self-end;
+  /* height: fit-content; */
+  padding: 0.8rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: var(--main-color-shadow);
+}
+
+.booking__content__box button:hover {
   box-shadow: var(--main-color-shadow-hover);
 }
