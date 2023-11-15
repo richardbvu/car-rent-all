@@ -1,5 +1,6 @@
 :root {
   --main-color: #ff4d44;
+  --main-color-light: #ffeae6;
   --text-color: #000000;
   --text-alt-color: #706f7b;
   --bg-color: #f8f8f8;
@@ -449,6 +450,10 @@ html {
 
 .booking__content__box__error {
   display: none;
+  font-size: 1.2rem;
+  background: #f8d7da;
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
 }
 
 .booking__content__box__confirm {
@@ -543,4 +548,77 @@ html {
 
 .booking__content__box button:hover {
   box-shadow: var(--main-color-shadow-hover);
+}
+
+/* BOOKING MODAL */
+
+.booking__section {
+  width: 100%;
+  height: 90vh;
+}
+
+.booking__modal {
+  top: 50%;
+  left: 0;
+  /* translate: -50% -50%; */
+}
+
+.booking__modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.booking__modal__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+  width: 100%;
+  /* margin-left: 1rem; */
+}
+
+.booking__modal__container__title {
+  text-align: center;
+  color: var(--bg-color);
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: var(--main-color);
+  padding: 1rem;
+}
+
+.booking__modal__container__message {
+  /* font-size: 1rem; */
+  background: var(--main-color-light);
+  padding: 1rem 3rem;
+}
+
+.booking__modal__container__message h4 {
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+.booking__modal__container__message i {
+  padding-right: 0.5rem;
+}
+
+.booking__modal__container__message p {
+  font-size: 1.2rem;
+  color: var(--text-alt-color);
+  padding-top: 1rem;
+}
+
+.booking__modal__container__car {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: 1fr 1fr;
+}
+
+.booking__modal__container__car__info__dates {
+  width: 100%;
+}
+
+.booking__modal__container__car__info__dates i {
+  background: aqua;
+  padding-right: 0.5rem;
 }
