@@ -174,14 +174,19 @@ document.getElementById("btn6").onclick = function () {
     "<i class='fa-solid fa-gas-pump' style='color: #000000'></i>" + "Gasoline";
 };
 
-// BOOKING
+// BOOKING + MODAL
 
 const modal = document.querySelector("[data-modal]");
 const openButton = document.querySelector("[data-modal-open]");
 const closeButton = document.querySelector("[data-modal-close]");
+const carSelect = document.querySelector("#car-select");
+const pickUpLocation = document.querySelector("#pick-up");
+const modalPickUp = document.querySelector("#modal-pick-up");
 
-openButton.addEventListener("click", () => {
+openButton.addEventListener("click", (event) => {
+  event.preventDefault();
   modal.showModal();
+  modalPickUp.innerHTML = pickUpLocation.value;
 });
 
 closeButton.addEventListener("click", () => {
