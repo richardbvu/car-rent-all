@@ -182,14 +182,28 @@ const openButton = document.querySelector("[data-modal-open]");
 const closeButton = document.querySelector("[data-modal-close]");
 const carSelect = document.querySelector("#car-select");
 const pickUpLocation = document.querySelector("#pick-up-location");
-const dropOffLocation = document.querySelector("#drop-off-location");
 const pickUpTime = document.querySelector("#pick-up-time");
+const dropOffLocation = document.querySelector("#drop-off-location");
 const dropOffTime = document.querySelector("#drop-off-time");
 
 const modalPickUp = document.querySelector("#modal-pick-up-location");
 const modalPickUpTime = document.querySelector("#modal-pick-up-time");
 const modalDropOff = document.querySelector("#modal-drop-off-location");
 const modalDropOffTime = document.querySelector("#modal-drop-off-time");
+
+const modalCarSelect = document.querySelector("#modal-car-select");
+const modalCarImg = document.querySelector("#modal-car-img");
+
+var carImages = [
+  "/images/img1.jpg",
+  "/images/img2.jpg",
+  "/images/img3.jpg",
+  "/images/img4.jpg",
+  "/images/img5.jpg",
+  "/images/img6.jpg",
+];
+
+// const modalCarImgSrc = document.querySelector('#')
 
 openButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -198,20 +212,16 @@ openButton.addEventListener("click", (event) => {
   modalPickUpTime.innerHTML = pickUpTime.value;
   modalDropOff.innerHTML = dropOffLocation.value;
   modalDropOffTime.innerHTML = dropOffTime.value;
+  modalCarSelect.innerHTML = carSelect.value;
+
+  // var carImg = document.querySelector("#modal-car-img");
+  // var carImg = modalCarImg;
+  // var dropDown = document.querySelector('#car-select');
+  // There is a hidden index of "Please select option"
+  modalCarImg.src = carImages[carSelect.selectedIndex - 1];
 });
 
 closeButton.addEventListener("click", () => {
   modal.close();
+  modalCarImg.src = carImages[carSelect[0]];
 });
-
-// bookingForm.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   validateFields();
-// });
-
-// const validateFields = () => {
-//   const carSelectValue = carSelect.value;
-//   if (carSelectValue === "Select your car") {
-//     ("All fields are mandatory");
-//   }
-// };
