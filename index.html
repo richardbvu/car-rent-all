@@ -178,6 +178,7 @@
     </section>
     <!-- BOOKING SECTION -->
     <section class="booking__section" id="booking-section">
+      <!-- BOOKING MODAL -->
       <dialog data-modal class="booking__modal">
         <div class="booking__modal__container">
           <div class="booking__modal__container__title">
@@ -193,8 +194,8 @@
           </div>
           <div class="booking__modal__container__car">
             <div class="booking__modal__container__car__info">
+              <h5>Location & Date</h5>
               <div class="booking__modal__container__car__info__dates">
-                <h5>Location & Date</h5>
                 <span>
                   <div>
                     <h5>
@@ -204,18 +205,53 @@
                       ></i
                       >Pick-up Location
                     </h5>
-                    <p id="modal-pick-up">
-                      Dynamic location here
-                      <input type="time" class="input-time" />
-                    </p>
+                    <p id="modal-pick-up-location"></p>
                   </div>
                 </span>
               </div>
-              <div class="booking__modal__container__car__info__dates"></div>
-              <div class="booking__modal__container__car__info__dates"></div>
-              <div class="booking__modal__container__car__info__dates"></div>
+              <div class="booking__modal__container__car__info__dates">
+                <span
+                  ><div>
+                    <h5>
+                      <i class="fa-solid fa-clock" style="color: #000000"></i
+                      >Pick-up Time
+                    </h5>
+                    <p id="modal-pick-up-time"></p>
+                    <input type="time" /></div
+                ></span>
+              </div>
+              <div class="booking__modal__container__car__info__dates">
+                <span
+                  ><div>
+                    <h5>
+                      <i
+                        class="fa-solid fa-location-dot"
+                        style="color: #000000"
+                      ></i
+                      >Drop-off Location
+                    </h5>
+                    <p id="modal-drop-off-location"></p></div
+                ></span>
+              </div>
+
+              <div class="booking__modal__container__car__info__dates">
+                <span
+                  ><div>
+                    <h5>
+                      <i class="fa-solid fa-clock" style="color: #000000"></i
+                      >Drop-off Time
+                    </h5>
+                    <p id="modal-drop-off-time"></p>
+                    <input type="time" /></div
+                ></span>
+              </div>
             </div>
-            <div class="booking__modal__container__car__model"></div>
+            <div class="booking__modal__container__car__model">
+              <h5>
+                <span>Car: </span>
+                <p>Dynamic car</p>
+              </h5>
+            </div>
           </div>
           <div class="booking__modal__container__personal">
             <button data-modal-close>Close</button>
@@ -223,7 +259,7 @@
           </div>
         </div>
       </dialog>
-
+      <!-- BOOKING FRONT PAGE-->
       <div class="booking__container">
         <div class="booking__content">
           <div class="booking__content__box">
@@ -232,13 +268,18 @@
             <p class="booking__content__box__confirm">
               Booking complete. Confirmation has been sent to your email.
             </p>
-            <form action="" class="booking__content__form">
+            <form
+              action="/"
+              class="booking__content__form"
+              id="booking-content-form"
+              required
+            >
               <div class="booking__content__form__car">
                 <label for="car-select"
                   ><i class="fa-solid fa-car-side"></i>Select your car</label
                 >
-                <select name="car-select" id="car-select">
-                  <option>Select your car</option>
+                <select name="car-select" id="car-select" required>
+                  <option selected hidden>Select your car</option>
                   <option value="BMW M5">BMW M5</option>
                   <option value="Audi A4">Audi A4</option>
                   <option value="Opel Astra">Opel Astra</option>
@@ -255,8 +296,8 @@
                   ></i
                   >Pick up</label
                 >
-                <select name="pick-up" id="pick-up">
-                  <option>Select pick up location</option>
+                <select name="pick-up" id="pick-up-location">
+                  <option selected hidden>Select pick up location</option>
                   <option value="Los Angeles">Los Angeles</option>
                   <option value="San Diego">San Diego</option>
                   <option value="Sacramento">Sacramento</option>
@@ -272,7 +313,7 @@
                   ></i
                   >Drop off</label
                 >
-                <select name="drop-off" id="drop-off">
+                <select name="drop-off" id="drop-off-location">
                   <option>Select drop off location</option>
                   <option value="Los Angeles">Los Angeles</option>
                   <option value="San Diego">San Diego</option>
@@ -301,7 +342,7 @@
                 >
                 <input type="date" id="drop-off-time" value="11-14-2023" />
               </div>
-              <button data-modal-open>Search</button>
+              <button data-modal-open type="submit">Continue</button>
             </form>
           </div>
         </div>
