@@ -558,8 +558,8 @@ html {
 }
 
 .booking__modal {
-  top: 50%;
-  left: 0;
+  top: 5%;
+  left: 1%;
   /* translate: -50% -50%; */
 }
 
@@ -574,6 +574,7 @@ html {
   align-items: center;
   /* padding: 1rem; */
   width: 100%;
+  max-width: 50rem;
   /* margin-left: 1rem; */
 }
 
@@ -612,13 +613,61 @@ html {
   display: grid;
   /* flex-direction: column; */
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 4rem;
+  /* font-size: 5rem; */
+  /* border-bottom: 0.1px solid var(--text-alt-color); */
 }
 
 .booking__modal__container__car__info__dates {
   width: 100%;
+  padding: 1rem;
+}
+
+.booking__modal__container__car__info > h5 {
+  color: var(--main-color);
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.booking__modal__container__car__info__dates h5 {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.booking__modal__container__car__info__dates p {
+  font-size: 1rem;
+  color: var(--text-alt-color);
+  padding: 0.5rem 0rem 0.5rem 1.2rem;
 }
 
 .booking__modal__container__car__info__dates i {
-  background: aqua;
+  /* background: aqua; */
   padding-right: 0.5rem;
+}
+
+.booking__modal__container__car__info__dates input {
+  margin: 0rem 0rem 0.5rem 1.2rem;
+  border: 2px solid var(--text-alt-color);
+}
+
+.booking__modal__container__car__model {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.booking__modal__container__car__model img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+
+.booking__modal__container__car__model h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
 }
