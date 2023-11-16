@@ -176,19 +176,42 @@ document.getElementById("btn6").onclick = function () {
 
 // BOOKING + MODAL
 
+const bookingForm = document.querySelector("booking-content-form");
 const modal = document.querySelector("[data-modal]");
 const openButton = document.querySelector("[data-modal-open]");
 const closeButton = document.querySelector("[data-modal-close]");
 const carSelect = document.querySelector("#car-select");
-const pickUpLocation = document.querySelector("#pick-up");
-const modalPickUp = document.querySelector("#modal-pick-up");
+const pickUpLocation = document.querySelector("#pick-up-location");
+const dropOffLocation = document.querySelector("#drop-off-location");
+const pickUpTime = document.querySelector("#pick-up-time");
+const dropOffTime = document.querySelector("#drop-off-time");
+
+const modalPickUp = document.querySelector("#modal-pick-up-location");
+const modalPickUpTime = document.querySelector("#modal-pick-up-time");
+const modalDropOff = document.querySelector("#modal-drop-off-location");
+const modalDropOffTime = document.querySelector("#modal-drop-off-time");
 
 openButton.addEventListener("click", (event) => {
   event.preventDefault();
   modal.showModal();
   modalPickUp.innerHTML = pickUpLocation.value;
+  modalPickUpTime.innerHTML = pickUpTime.value;
+  modalDropOff.innerHTML = dropOffLocation.value;
+  modalDropOffTime.innerHTML = dropOffTime.value;
 });
 
 closeButton.addEventListener("click", () => {
   modal.close();
 });
+
+// bookingForm.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   validateFields();
+// });
+
+// const validateFields = () => {
+//   const carSelectValue = carSelect.value;
+//   if (carSelectValue === "Select your car") {
+//     ("All fields are mandatory");
+//   }
+// };
