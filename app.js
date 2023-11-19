@@ -178,6 +178,7 @@ document.getElementById("btn6").onclick = function () {
 
 const bookingForm = document.querySelector("booking-content-form");
 const modal = document.querySelector("[data-modal]");
+const bookingError = document.querySelector(".booking__content__box__error");
 const openButton = document.querySelector("[data-modal-open]");
 const closeButton = document.querySelector("[data-modal-close]");
 const carSelect = document.querySelector("#car-select");
@@ -214,18 +215,28 @@ var carImages = [
 
 openButton.addEventListener("click", (event) => {
   event.preventDefault();
-  modal.showModal();
-  modalPickUp.innerHTML = pickUpLocation.value;
-  modalPickUpTime.innerHTML = pickUpTime.value;
-  modalDropOff.innerHTML = dropOffLocation.value;
-  modalDropOffTime.innerHTML = dropOffTime.value;
-  modalCarSelect.innerHTML = carSelect.value;
 
-  // var carImg = document.querySelector("#modal-car-img");
-  // var carImg = modalCarImg;
-  // var dropDown = document.querySelector('#car-select');
+  if (
+    carSelect.value == "Select your car" ||
+    pickUpLocation.value == "Select pick up location" ||
+    dropOffLocation.value == "Select drop off location" ||
+    pickUpTime.value == "" ||
+    dropOffTime.value == ""
+  ) {
+    bookingError.style.display = "flex";
+  } else {
+    modal.showModal();
+    modalPickUp.innerHTML = pickUpLocation.value;
+    modalPickUpTime.innerHTML = pickUpTime.value;
+    modalDropOff.innerHTML = dropOffLocation.value;
+    modalDropOffTime.innerHTML = dropOffTime.value;
+    modalCarSelect.innerHTML = carSelect.value;
+
+    modalCarImg.src = carImages[carSelect.selectedIndex - 1];
+
+    bookingError.style.display = "none";
+  }
   // There is a hidden index of "Please select option"
-  modalCarImg.src = carImages[carSelect.selectedIndex - 1];
 });
 
 // closeButton.addEventListener("click", () => {
@@ -241,6 +252,8 @@ reserveNowButton.addEventListener("click", () => {
 modalCloseButton.addEventListener("click", () => {
   modal.close();
   modalCarImg.src = carImages[carSelect[0]];
+  document.querySelector(".booking__content__box__error").style.display =
+    "none";
 });
 
 modal.addEventListener("click", (e) => {
@@ -251,6 +264,21 @@ modal.addEventListener("click", (e) => {
     e.clientY < dialogBox.top ||
     e.clientY > dialogBox.bottom
   ) {
+    document.querySelector(".booking__content__box__error").style.display =
+      "none";
     modal.close();
   }
 });
+
+// function test() {
+//   if (carSelect.value == "Select your car")
+//     bookingError.style.display =
+//       "flex";
+// }
+
+// function test() {
+//   const validCheck = carSelect.checkValidity();
+//   if (!validCheck) {
+//     alert("help");
+//   }
+// }
