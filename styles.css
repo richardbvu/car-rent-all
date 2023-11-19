@@ -247,7 +247,7 @@ html:has(dialog[open]) {
   width: 100%;
   background: #fff;
   /* background-color: hotpink; */
-  padding-top: 3rem;
+  padding-top: 5rem;
   height: 97vh;
   /* margin-top: 6rem; */
 }
@@ -296,10 +296,10 @@ html:has(dialog[open]) {
 .vehicle__container__car-select {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   /* justify-content: center; */
   /* align-items: center; */
-  gap: 0.1rem;
+  /* gap: 0.1rem; */
   transform: all 0.3s;
   /* margin-right: 2.5rem; */
   /* background: coral; */
@@ -364,7 +364,8 @@ html:has(dialog[open]) {
   justify-content: space-around;
   /* align-items: center; */
   width: 100%;
-  width: 20rem;
+  width: 19rem;
+  /* border-radius: 0.3rem; */
 }
 
 .vehicle__container__car-desc__price {
@@ -384,16 +385,22 @@ html:has(dialog[open]) {
   grid-template-rows: auto;
   /* grid-template-rows: auto; */
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   font-size: 1.4rem;
+  /* border-radius: 0.3rem; */
+  /* color: aqua; */
 }
 
 .vehicle__container__car-desc__table__col {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 1.5rem;
-  border: 1px solid black;
+  padding: 1rem 0;
+  margin: 0.1rem 0;
+  /* border: 1px solid black; */
+  border-radius: 0.3rem;
+  /* gap: 5rem; */
+  background: rgb(208, 205, 205);
 }
 
 .vehicle__container__car-desc__table__col i {
@@ -406,7 +413,7 @@ html:has(dialog[open]) {
   border-radius: 0.3rem;
   padding: 1rem;
   text-decoration: none;
-  margin-top: 1.4rem;
+  /* margin-top: 1.4rem; */
   box-shadow: var(--main-color-shadow);
 }
 
@@ -419,7 +426,10 @@ html:has(dialog[open]) {
 .booking__section {
   background-color: var(--bg-color);
   width: 100%;
-  height: 70vh;
+  /* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .booking__container {
@@ -432,20 +442,23 @@ html:has(dialog[open]) {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 5rem;
-  background: aquamarine;
+  /* background: aquamarine; */
   padding: 1rem;
+  width: 100%;
 }
 
 .booking__content {
   display: flex;
   width: 100%;
   position: relative;
-  background: chocolate;
+  background: #fff;
   padding: 1rem;
+  border: 1px solid #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .booking__content__box {
-  background: hotpink;
+  /* background: hotpink; */
   width: 100%;
   padding: 5rem;
 }
@@ -458,7 +471,7 @@ html:has(dialog[open]) {
 .booking__content__box__error {
   display: none;
   font-size: 1.2rem;
-  background: #f8d7da;
+  background: #ffa3ab;
   padding: 1rem 1.4rem;
   border-radius: 0.5rem;
 }
@@ -478,8 +491,9 @@ html:has(dialog[open]) {
   /* justify-content: space-around; */
   gap: 1.5rem;
   width: 100%;
-  padding: 1rem;
-  background: orange;
+  padding: 1rem 0;
+  /* background: orange; */
+  border-radius: 5px;
 }
 
 .booking__content__form__car {
@@ -855,7 +869,7 @@ body:has(dialog) {
 
 .save__section {
   width: 100%;
-  background: var(--text-color);
+  background: #2d2d2d;
 }
 
 .save__container {
