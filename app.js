@@ -194,6 +194,13 @@ const modalDropOffTime = document.querySelector("#modal-drop-off-time");
 const modalCarSelect = document.querySelector("#modal-car-select");
 const modalCarImg = document.querySelector("#modal-car-img");
 
+const reserveNowButton = document.querySelector("#reserve-now-button");
+const bookingConfirm = document.querySelector(
+  ".booking__content__box__confirm"
+);
+
+const modalCloseButton = document.querySelector("#modal-close-button");
+
 var carImages = [
   "/images/img1.jpg",
   "/images/img2.jpg",
@@ -221,7 +228,29 @@ openButton.addEventListener("click", (event) => {
   modalCarImg.src = carImages[carSelect.selectedIndex - 1];
 });
 
-closeButton.addEventListener("click", () => {
+// closeButton.addEventListener("click", () => {
+//   modal.close();
+//   modalCarImg.src = carImages[carSelect[0]];
+// });
+
+reserveNowButton.addEventListener("click", () => {
+  bookingConfirm.style.display = "flex";
+  modal.close();
+});
+
+modalCloseButton.addEventListener("click", () => {
   modal.close();
   modalCarImg.src = carImages[carSelect[0]];
+});
+
+modal.addEventListener("click", (e) => {
+  const dialogBox = modal.getBoundingClientRect();
+  if (
+    e.clientX < dialogBox.left ||
+    e.clientX > dialogBox.right ||
+    e.clientY < dialogBox.top ||
+    e.clientY > dialogBox.bottom
+  ) {
+    modal.close();
+  }
 });
