@@ -183,6 +183,7 @@
         <div class="booking__modal__container">
           <div class="booking__modal__container__title">
             <h2>Complete your reservation</h2>
+            <i class="fa-solid fa-x" id="modal-close-button"></i>
           </div>
           <div class="booking__modal__container__message">
             <h4>
@@ -253,15 +254,101 @@
               </div>
             </div>
             <div class="booking__modal__container__car__model">
-              <h5 id="modal-car-select">
-                Dynamic car name
-              </h5>
-              <img id="modal-car-img" src="/" alt="car_img"></img>
+              <h5 id="modal-car-select">Dynamic car name</h5>
+              <img id="modal-car-img" src="/" alt="" />
             </div>
           </div>
           <div class="booking__modal__container__personal">
-            <button data-modal-close>Close</button>
-            <button type="submit">Reserve now</button>
+            <h2>Personal Information</h2>
+            <h5>All fields marked with * are required.</h5>
+            <form action="" class="booking__modal__container__personal__form">
+              <div class="booking__modal__container__personal__form__2col">
+                <div
+                  class="booking__modal__container__personal__form__2col__info"
+                >
+                  <span
+                    ><label for="">First Name</label>
+                    <input type="text" placeholder="Enter your first name"
+                  /></span>
+                </div>
+                <div
+                  class="booking__modal__container__personal__form__2col__info"
+                >
+                  <span
+                    ><label for="">Last Name</label>
+                    <input type="text" placeholder="Enter your last name"
+                  /></span>
+                </div>
+                <div
+                  class="booking__modal__container__personal__form__2col__info"
+                >
+                  <span
+                    ><label for="">Phone Number</label>
+                    <input type="text" placeholder="Enter your phone number"
+                  /></span>
+                </div>
+                <div
+                  class="booking__modal__container__personal__form__2col__info"
+                >
+                  <span
+                    ><label for="">Age</label>
+                    <input type="text" placeholder="Enter your age"
+                  /></span>
+                </div>
+              </div>
+
+              <div class="booking__modal__container__personal__form__1col">
+                <div
+                  class="booking__modal__container__personal__form__1col__info"
+                >
+                  <span
+                    ><label for="">Email</label>
+                    <input type="email" placeholder="Enter your email address"
+                  /></span>
+                </div>
+                <div
+                  class="booking__modal__container__personal__form__1col__info"
+                >
+                  <span
+                    ><label for="">Address</label>
+                    <input type="text" placeholder="Enter your address"
+                  /></span>
+                </div>
+              </div>
+
+              <div class="booking__modal__container__personal__form__2col">
+                <div
+                  class="booking__modal__container__personal__form__2col__info"
+                >
+                  <span
+                    ><label for="">City</label>
+                    <input type="text" placeholder="Enter your city"
+                  /></span>
+                </div>
+                <div
+                  class="booking__modal__container__personal__form__2col__info"
+                >
+                  <span
+                    ><label for="">Zip Code</label>
+                    <input type="text" placeholder="Enter your zip code"
+                  /></span>
+                </div>
+              </div>
+              <div class="booking__modal__container__checkbox">
+                <input type="checkbox" />
+                <p>Please send me latest news and updates</p>
+              </div>
+            </form>
+          </div>
+          <div class="booking__modal__container__reserve">
+            <!-- <button data-modal-close>Close</button> -->
+            <button
+              type="submit"
+              class="booking__modal__container__reserve__button"
+              id="reserve-now-button"
+            >
+              Reserve now
+            </button>
           </div>
         </div>
       </dialog>
@@ -359,46 +446,65 @@
       <div class="save__container">
         <div class="save__container__title">
           <h5>Begin your journey with us!</h5>
-          <p>At your nearest major airport and local suppliers. Any car. Any time.</p><p>24/7 Support.</p> 
+          <p>
+            At your nearest major airport and local suppliers. Any car. Any
+            time.
+          </p>
+          <p>24/7 Support.</p>
         </div>
       </div>
     </section>
     <!-- CHOOSE US SECTION -->
     <section class="choose__us__section">
       <div class="choose__us__container">
-        <div class="choose__us__container__car"><img src="./images/img1.jpg" alt="Image of cars"></div>
+        <div class="choose__us__container__car">
+          <img src="./images/img1.jpg" alt="Image of cars" />
+        </div>
         <div class="choose__us__container__info">
           <div class="choose__us__container__info__title">
             <h5>Choose our cars</h5>
             <h4>Best deals across the nation</h4>
             <div class="choose__us__container__info__message">
-            <p>Car Rent-All has the best selection of affordable and luxirious cars. We are dedicated to providing the best value for your money and time. We will garuntee top quality services and products without breaking the bank. Our cars will give you the ultimate experience so begin your journey us!</p>
-          <button class="choose__us__container__info__button">
-            <a href="/">Find Details</a>
-          </button>
+              <p>
+                Car Rent-All has the best selection of affordable and luxirious
+                cars. We are dedicated to providing the best value for your
+                money and time. We will garuntee top quality services and
+                products without breaking the bank. Our cars will give you the
+                ultimate experience so begin your journey us!
+              </p>
+              <button class="choose__us__container__info__button">
+                <a href="/">Find Details</a>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="choose__us__container__cards">
+          <div class="choose__us__container__cards">
             <div class="choose__us__container__card__item">
               <i class="fa-solid fa-car-rear"></i>
               <h5>Nationwide coverage</h5>
-              <p>Begin your cross country experience with our top of the line selection of vehicles.</p>
+              <p>
+                Begin your cross country experience with our top of the line
+                selection of vehicles.
+              </p>
             </div>
             <div class="choose__us__container__card__item">
               <i class="fa-solid fa-magnifying-glass-dollar"></i>
               <h5>No extra fees</h5>
-              <p>We are transparent with our pricing. Enjoy your time with our vehicles and know you are getting exactly what you signed up for.</p>
+              <p>
+                We are transparent with our pricing. Enjoy your time with our
+                vehicles and know you are getting exactly what you signed up
+                for.
+              </p>
             </div>
             <div class="choose__us__container__card__item">
               <i class="fa-solid fa-phone-volume"></i>
               <h5>24/7 Support</h5>
-              <p>Need help with your vehicle? Car Rent-All provides support around the clock to help customers at all times.</p>
+              <p>
+                Need help with your vehicle? Car Rent-All provides support
+                around the clock to help customers at all times.
+              </p>
+            </div>
           </div>
-      </div>
-    </div>
-        
-        
-        
+        </div>
       </div>
     </section>
     <!-- TESTIMONIALS SECTION -->
@@ -406,19 +512,40 @@
       <div class="testimonials__container">
         <div class="testimonials__container__title"><h3>Testimonials</h3></div>
         <div class="testimonials__container__message">
-          <p>We fully believe that our customer's satisfaction is our first and greatest priority. Discover what our eager customers had to share about us and our vehicles! You can expect a positive experience as our customers.</p></div>
+          <p>
+            We fully believe that our customer's satisfaction is our first and
+            greatest priority. Discover what our eager customers had to share
+            about us and our vehicles! You can expect a positive experience as
+            our customers.
+          </p>
+        </div>
         <div class="testimonials__container__cards">
           <div class="testimonials__container__card__item">
-            <p>"We had such an easy time getting a car with no prior notice. It was very affordable and simple!"</p>
+            <p>
+              "We had such an easy time getting a car with no prior notice. It
+              was very affordable and simple!"
+            </p>
             <div class="testimonials__container__card__item__customer">
-              <img src="/images/testi.jpg" alt="">
-              <div class="testimonials__container__card__item__customer__name"><p>Harold Beam</p><p>Los Angeles</p></div></div>
+              <img src="/images/testi.jpg" alt="" />
+              <div class="testimonials__container__card__item__customer__name">
+                <p>Harold Beam</p>
+                <p>Los Angeles</p>
+              </div>
+            </div>
           </div>
           <div class="testimonials__container__card__item">
-            <p>"I wanted a nice yet affordable car. Car Rent-All was the perfect choice! They had a wide selection of vehicles and the prices were great!"</p>
+            <p>
+              "I wanted a nice yet affordable car. Car Rent-All was the perfect
+              choice! They had a wide selection of vehicles and the prices were
+              great!"
+            </p>
             <div class="testimonials__container__card__item__customer">
-              <img src="/images/testi.jpg" alt="">
-              <div class="testimonials__container__card__item__customer__name"><p>Baron Smith</p><p>San Diego</p></div></div>
+              <img src="/images/testi.jpg" alt="" />
+              <div class="testimonials__container__card__item__customer__name">
+                <p>Baron Smith</p>
+                <p>San Diego</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
