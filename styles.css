@@ -924,50 +924,47 @@ body:has(dialog) {
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding: 5rem;
+  padding: 5rem 0;
   text-align: center;
-  background: pink;
+  /* background: pink; */
 }
 
 .choose__us__container__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  background: aqua;
+  gap: 10rem;
+  /* background: aqua; */
+  /* font-size: 1rem; */
   /* text-align: left; */
-}
-
-.choose__us__container__car img {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* width: 10%; */
-  width: 100%;
-  width: 250px;
-  border-radius: 0.3rem;
 }
 
 .choose__us__container__info__title {
   text-align: left;
   /* display: flex; */
-  /* justify-content: left; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .choose__us__container__info__title h5 {
   padding-top: 5rem;
   font-size: 2rem;
+  text-align: left;
 }
 
 .choose__us__container__info__title h4 {
   font-size: 3rem;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
+  text-align: left;
 }
 
 .choose__us__container__info__message {
   font-size: 1.5rem;
   /* padding-bottom: rem; */
   color: var(--text-alt-color);
+  line-height: 1.5;
 }
 
 .choose__us__container__info__button {
@@ -977,6 +974,7 @@ body:has(dialog) {
   box-shadow: var(--main-color-shadow);
   background-color: var(--main-color);
   border: none;
+  cursor: pointer;
 }
 
 .choose__us__container__info__button:hover {
@@ -987,6 +985,8 @@ body:has(dialog) {
   color: var(--bg-color);
   text-decoration: none;
   font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.3s;
 }
 
 .choose__us__container__cards {
@@ -995,25 +995,37 @@ body:has(dialog) {
 
 .choose__us__container__card__item {
   padding: 1rem;
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .choose__us__container__card__item i {
   /* background: darkgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: red;
   padding: 1rem;
   font-size: 3rem;
   background: #fac3b9;
   border-radius: 100px;
+  /* width: 100%; */
 }
 
 .choose__us__container__card__item h5 {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1rem 0;
+  text-align: left;
 }
 
 .choose__us__container__card__item p {
   color: var(--text-alt-color);
   font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.5;
 }
 
 /* TESTIMONIALS */
