@@ -12,6 +12,7 @@
 html {
   scroll-behavior: smooth;
   /* scrollbar-gutter: stable both-edges; */
+  /* z-index: 1; */
 }
 
 html:has(dialog[open]) {
@@ -211,7 +212,7 @@ html:has(dialog[open]) {
 }
 
 .hero__content__buttons__rent-now {
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
   background: var(--main-color);
   border-radius: 0.3rem;
   box-shadow: var(--main-color-shadow);
@@ -222,7 +223,7 @@ html:has(dialog[open]) {
 }
 
 .hero__content__buttons__learn-more {
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
   background: black;
   border-radius: 0.3rem;
 }
@@ -250,6 +251,7 @@ html:has(dialog[open]) {
   padding-top: 5rem;
   height: 97vh;
   /* margin-top: 6rem; */
+  /* background-image: url(/images/background1.png); */
 }
 
 .vehicle__container {
@@ -967,26 +969,27 @@ body:has(dialog) {
   line-height: 1.5;
 }
 
+.choose__us__container__info__message > div {
+  margin-top: 3rem;
+}
+
 .choose__us__container__info__button {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
   box-shadow: var(--main-color-shadow);
   background-color: var(--main-color);
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--bg-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.3s;
 }
 
 .choose__us__container__info__button:hover {
   box-shadow: var(--main-color-shadow-hover);
-}
-
-.choose__us__container__info__button a {
-  color: var(--bg-color);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
-  transition: all 0.3s;
 }
 
 .choose__us__container__cards {
@@ -1134,4 +1137,131 @@ body:has(dialog) {
   /* justify-content: flex-end; */
   align-items: center;
   color: var(--main-color);
+}
+
+/* FAQ */
+
+.faq__section {
+  /* position: absolute; */
+  width: 100%;
+  height: 80vh;
+  /* background: red; */
+  /* padding: 10rem; */
+  /* background-image: url(/images/background1.png); */
+  /* background- */
+  /* z-index: 3; */
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 10rem;
+  /* padding-bottom: ; */
+  /* z-index: 10; */
+}
+
+.faq__container__title {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  /* background: salmon; */
+  width: 60rem;
+  /* padding-top: 5rem; */
+  /* max-width: 80rem; */
+}
+
+.faq__container__title h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.faq__container__title h2 {
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.faq__container__title p {
+  font-size: 1.5rem;
+  padding-bottom: 5rem;
+  color: var(--text-alt-color);
+}
+
+.faq__container__box {
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.faq__container__box__qa {
+  /* background: aqua; */
+  /* width: 500px; */
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  max-width: 60rem;
+  /* z-index: 10; */
+  /* background: var(--bg-color); */
+}
+
+.faq__container__box__qa__questions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  /* border-bottom: 2px solid var(--text-alt-color); */
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.faq__container__box__qa__answers {
+  font-size: 1.3rem;
+  color: var(--text-alt-color);
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 2rem;
+  /* margin-top: 0.5rem; */
+  /* margin: 1rem; */
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+
+  transition: max-height 0.1s ease-in-out;
+}
+
+.faq__container__box__qa.active .faq__container__box__qa__questions {
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: var(--main-color-shadow);
+  margin-bottom: 1rem;
+}
+
+.faq__container__box__qa.active .faq__container__box__qa__answers {
+  max-height: 300px;
+  /* box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1); */
+  padding-bottom: 1rem;
+  animation: fade 0.5s ease-in-out;
+}
+
+.faq__container__box__qa.active i {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
