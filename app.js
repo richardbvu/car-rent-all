@@ -270,15 +270,34 @@ modal.addEventListener("click", (e) => {
   }
 });
 
-// function test() {
-//   if (carSelect.value == "Select your car")
-//     bookingError.style.display =
-//       "flex";
-// }
+const faqs = document.querySelectorAll(".faq__container__box__qa");
 
-// function test() {
-//   const validCheck = carSelect.checkValidity();
-//   if (!validCheck) {
-//     alert("help");
+const activeFaqs = document.querySelectorAll(".faq__container__box__qa.active");
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
+
+// faqs.forEach((faq) => {
+//   faq.addEventListener("click", () => {
+//     if (faq.classList.contains("active")) {
+//       faq.classList.toggle("active");
+//     } else {
+//       faq.classList.toggle("active");
+//     }
+//   });
+// });
+
+// faqs.addEventListener("click", () => {
+//   if (faqs.classList.contains("active")) {
+//     faqs.classList.remove("active");
+//   } else {
+//     faqs.forEach((faq) => {
+//       faq.addEventListener("click", () => {
+//         faq.classList.toggle("active");
+//       });
+//     });
 //   }
-// }
+// });
