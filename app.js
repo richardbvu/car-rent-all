@@ -274,30 +274,32 @@ const faqs = document.querySelectorAll(".faq__container__box__qa");
 
 const activeFaqs = document.querySelectorAll(".faq__container__box__qa.active");
 
+// faqs.forEach((faq) => {
+//   faq.addEventListener("click", () => {
+//     faq.classList.toggle("active");
+//   });
+// });
+
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
     faq.classList.toggle("active");
   });
 });
 
-// faqs.forEach((faq) => {
-//   faq.addEventListener("click", () => {
-//     if (faq.classList.contains("active")) {
-//       faq.classList.toggle("active");
-//     } else {
-//       faq.classList.toggle("active");
-//     }
-//   });
+const carSelectButtons = document.querySelectorAll(".car-select-button");
+const btn1 = document.querySelector("#btn1");
+
+// btn2.addEventListener("click", () => {
+//   btn1.classList.remove("button-active");
 // });
 
-// faqs.addEventListener("click", () => {
-//   if (faqs.classList.contains("active")) {
-//     faqs.classList.remove("active");
-//   } else {
-//     faqs.forEach((faq) => {
-//       faq.addEventListener("click", () => {
-//         faq.classList.toggle("active");
-//       });
-//     });
-//   }
+carSelectButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    btn1.classList.remove("button-active");
+  });
+});
+
+// btn2.addEventListener("click", () => {
+//   btn1.style.color = "black";
+//   btn1.style.background = "#d0cdcd";
 // });
