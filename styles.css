@@ -38,8 +38,8 @@ html:has(dialog[open]) {
   font-size: 1.2rem;
   position: relative;
   top: 0;
-  /* padding-top: 3rem; */
-  /* padding-bottom: 3rem; */
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   /* z-index: ; */
 }
 
@@ -146,7 +146,7 @@ html:has(dialog[open]) {
 .hero__section {
   background-color: var(--bg-color);
   width: 100%;
-  padding: 5rem 0rem;
+  padding: 2.5rem 0rem;
   /* height: 90vh; */
   /* position: relative; */
   /* padding-top: 5rem; */
@@ -198,7 +198,7 @@ html:has(dialog[open]) {
 .hero__content__text p {
   color: var(--text-alt-color);
   padding-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 4rem;
 }
