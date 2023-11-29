@@ -239,11 +239,6 @@ openButton.addEventListener("click", (event) => {
   // There is a hidden index of "Please select option"
 });
 
-// closeButton.addEventListener("click", () => {
-//   modal.close();
-//   modalCarImg.src = carImages[carSelect[0]];
-// });
-
 reserveNowButton.addEventListener("click", () => {
   bookingConfirm.style.display = "flex";
   modal.close();
@@ -274,12 +269,6 @@ const faqs = document.querySelectorAll(".faq__container__box__qa");
 
 const activeFaqs = document.querySelectorAll(".faq__container__box__qa.active");
 
-// faqs.forEach((faq) => {
-//   faq.addEventListener("click", () => {
-//     faq.classList.toggle("active");
-//   });
-// });
-
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
     faq.classList.toggle("active");
@@ -289,17 +278,35 @@ faqs.forEach((faq) => {
 const carSelectButtons = document.querySelectorAll(".car-select-button");
 const btn1 = document.querySelector("#btn1");
 
-// btn2.addEventListener("click", () => {
-//   btn1.classList.remove("button-active");
-// });
-
 carSelectButtons.forEach((button) => {
   button.addEventListener("click", () => {
     btn1.classList.remove("button-active");
   });
 });
 
-// btn2.addEventListener("click", () => {
-//   btn1.style.color = "black";
-//   btn1.style.background = "#d0cdcd";
-// });
+const scrollUp = document.querySelector("#scroll-up");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    scrollUp.classList.add("active");
+  } else {
+    scrollUp.classList.remove("active");
+  }
+});
+
+// const navBarToggle = document.querySelector(".navbar__toggle");
+const navBarToggle = document.querySelector("#navbar-icon");
+const navBarMenu = document.querySelector(".navbar__menu");
+const navBarButtons = document.querySelector(".navbar__buttons");
+const navBarIcon = document.querySelector("#navbar-icon");
+
+navBarToggle.addEventListener("click", () => {
+  navBarMenu.classList.toggle("active");
+  navBarButtons.classList.toggle("active");
+
+  if (navBarMenu.classList.contains("active")) {
+    navBarToggle.classList = "fa-solid fa-xmark";
+  } else {
+    navBarToggle.classList = "fa-solid fa-bars";
+  }
+});
