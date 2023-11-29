@@ -43,7 +43,7 @@ html:has(dialog[open]) {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  cursor: pointer;
+  /* cursor: pointer; */
   width: 100%;
   max-width: 1536px;
   margin-top: 3rem;
@@ -61,6 +61,8 @@ html:has(dialog[open]) {
   color: var(--text-color);
   font-weight: 800;
   font-size: 1.5rem;
+  position: sticky;
+  z-index: 999;
 }
 
 #navbar__icon {
@@ -132,6 +134,140 @@ html:has(dialog[open]) {
 
 .navbar__button__register:hover {
   box-shadow: var(--main-color-shadow-hover);
+}
+
+.navbar__toggle {
+  color: var(--text-color);
+  display: none;
+  cursor: pointer;
+}
+
+.navbar__dropdown__item {
+  display: none;
+}
+
+/* NAVBAR RESPONSIVE */
+
+/* 2xl */
+@media screen and (max-width: 1536px) {
+  .navbar__container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media screen and (max-width: 1280px) {
+  .navbar__container {
+    max-width: 1024px;
+  }
+  .navbar__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    padding: 0.1rem;
+    font-size: 2rem;
+    height: fit-content;
+    margin-top: 1.4rem;
+    z-index: 99;
+    /* display: none; */
+    /* transition: all 3s linear; */
+  }
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    position: absolute;
+    top: -1000px;
+    /* height: 100vh; */
+    left: 0%;
+    width: 100%;
+    transition: all 0.5s linear;
+    z-index: 11;
+  }
+  .navbar__menu.active {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    z-index: 11;
+    /* cursor: pointer; */
+    /* height: 75vh; */
+    top: 100px;
+    /* height: 100vh; */
+    left: 0%;
+    width: 100%;
+    transition: all 0.5s linear;
+  }
+  .navbar__links {
+    padding: 2rem;
+  }
+  .navbar__buttons {
+    position: absolute;
+    top: -1000px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    z-index: 11;
+    left: 0%;
+    width: 100%;
+    /* background: red; */
+
+    transition: all 0.5s linear;
+  }
+  .navbar__buttons.active {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    z-index: 11;
+    /* height: 30vh; */
+    top: 470px;
+    /* height: 50vh; */
+    left: 0%;
+    width: 100%;
+    /* background: red; */
+
+    transition: all 0.5s linear;
+  }
+  .navbar__buttons {
+    padding-top: 60px;
+    padding-bottom: 200px;
+  }
+}
+
+/* lg */
+@media screen and (max-width: 1024px) {
+  .navbar__container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media screen and (max-width: 640px) {
+  .navbar__container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media screen and (max-width: 475px) {
+  .navbar__container {
+    width: 100%;
+  }
 }
 
 /* HERO  */
@@ -231,6 +367,50 @@ html:has(dialog[open]) {
 .hero__content__hero-img {
   width: 50%;
   border-radius: 20px;
+}
+
+/* HERO RESPONSIVE */
+
+/* 2xl */
+@media screen and (max-width: 1536px) {
+  .hero__container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media screen and (max-width: 1280px) {
+  .hero__container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media screen and (max-width: 1024px) {
+  .hero__container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media screen and (max-width: 768px) {
+  .hero__container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media screen and (max-width: 640px) {
+  .hero__container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media screen and (max-width: 475px) {
+  .hero__container {
+    width: 100%;
+  }
 }
 
 /* BOOKING  */
