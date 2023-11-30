@@ -160,6 +160,9 @@ html:has(dialog[open]) {
   .navbar__container {
     max-width: 1024px;
   }
+  .navbar__logo {
+    margin-left: 1rem;
+  }
   .navbar__toggle {
     display: flex;
     justify-content: center;
@@ -172,6 +175,7 @@ html:has(dialog[open]) {
     z-index: 99;
     /* display: none; */
     /* transition: all 3s linear; */
+    margin-right: 1rem;
   }
   .navbar__menu {
     display: grid;
@@ -186,6 +190,7 @@ html:has(dialog[open]) {
     width: 100%;
     transition: all 0.5s linear;
     z-index: 11;
+    /* padding: 5rem; */
   }
   .navbar__menu.active {
     display: grid;
@@ -1491,42 +1496,45 @@ html:has(dialog[open]) {
 
 /* 2xl */
 @media screen and (max-width: 1536px) {
-  .navbar__container {
+  .save__container {
     max-width: 1280px;
+  }
+  .save__container__title {
+    text-wrap: balance;
   }
 }
 
 /* xl */
 @media screen and (max-width: 1280px) {
-  .navbar__container {
+  .save__container {
     max-width: 1024px;
   }
 }
 
 /* lg */
 @media screen and (max-width: 1024px) {
-  .navbar__container {
+  .save__container {
     max-width: 768px;
   }
 }
 
 /* md */
 @media screen and (max-width: 768px) {
-  .navbar__container {
+  .save__container {
     max-width: 640px;
   }
 }
 
 /* sm */
 @media screen and (max-width: 640px) {
-  .navbar__container {
+  .save__container {
     max-width: 475px;
   }
 }
 
 /* xs */
 @media screen and (max-width: 475px) {
-  .navbar__container {
+  .save__container {
     width: 100%;
   }
 }
@@ -1545,7 +1553,7 @@ html:has(dialog[open]) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1536px;
+  max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
@@ -1610,12 +1618,13 @@ html:has(dialog[open]) {
 }
 
 .choose__us__container__card__item {
-  padding: 1rem;
+  padding: 1rem 0rem;
   display: grid;
   grid-template-columns: 5rem 1fr;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  /* background-color: red; */
 }
 
 .choose__us__container__card__item i {
@@ -1642,6 +1651,103 @@ html:has(dialog[open]) {
   line-height: 1.5;
 }
 
+/* CHOOSE US RESPONSIVE */
+
+/* 2xl */
+@media screen and (max-width: 1536px) {
+  .choose__us__container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media screen and (max-width: 1280px) {
+  .choose__us__container {
+    max-width: 1024px;
+  }
+  .choose__us__container__info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0rem;
+  }
+  .choose__us__container__info__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choose__us__container__info__message {
+    text-align: center;
+  }
+  .choose__us__container__cards {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+  }
+  .choose__us__container__card__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .choose__us__container__card__item span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* background: saddlebrown; */
+  }
+  .choose__us__container__card__item span h5 {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: start; */
+    text-align: center;
+    /* background: saddlebrown; */
+  }
+  .choose__us__container__card__item span p {
+    text-align: center;
+  }
+
+  /* lg */
+  @media screen and (max-width: 1024px) {
+    .choose__us__container {
+      max-width: 768px;
+    }
+    .choose__us__container__info__title h4 {
+      font-size: 3rem;
+      padding-top: 0.5rem;
+      padding-bottom: 2rem;
+      text-align: center;
+      /* background: saddlebrown; */
+    }
+  }
+
+  /* md */
+  @media screen and (max-width: 768px) {
+    .choose__us__container {
+      max-width: 640px;
+    }
+  }
+
+  /* sm */
+  @media screen and (max-width: 640px) {
+    .choose__us__container {
+      max-width: 475px;
+    }
+  }
+
+  /* xs */
+  @media screen and (max-width: 475px) {
+    .choose__us__container {
+      width: 100%;
+    }
+  }
+}
 /* TESTIMONIALS */
 
 .testimonials__section {
@@ -1656,7 +1762,7 @@ html:has(dialog[open]) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1536px;
+  max-width: 1536px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 0.5rem;
