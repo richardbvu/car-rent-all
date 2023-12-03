@@ -26,9 +26,7 @@
     <!-- NAVBAR SECTION -->
     <nav class="navbar" id="navbar">
       <div class="navbar__container">
-        <a href="/" class="navbar__logo">
-          <i class="fa-solid fa-car-side" id="navbar__icon"></i>CAR Rent-All</a
-        >
+        <a href="/" class="navbar__logo"> CAR Rent-All</a>
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a href="/" class="navbar__links">Home</a>
@@ -50,10 +48,18 @@
           <a href="/" class="navbar__button__sign-in">Sign In</a>
           <a href="/" class="navbar__button__register">Register</a>
         </div>
+        <!-- NAVBAR RESPONSIVE -->
+        <div class="navbar__toggle">
+          <i id="navbar-icon" class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </nav>
     <!-- MODELS SECTION -->
     <section class="models__section">
+      <div class="models__title">
+        <h5>Vehicles</h5>
+        <p>Select your vehicle</p>
+      </div>
       <div class="models__container">
         <div class="models__container__box__cars">
           <div class="models__container__box__cars__img">
@@ -159,7 +165,7 @@
           </div>
           <div class="models__container__box__cars__text">
             <div class="models__container__box__cars__text__title">
-              <h2>Volkswagen</h2>
+              <h2 id="volkswagen">Volkswagen</h2>
               <h3>$20 <span>/ Day</span></h3>
             </div>
             <div class="models__container__box__cars__text__info">
@@ -237,9 +243,9 @@
           </ul>
           <ul class="footer__container__content__info">
             <li>Working hours</li>
-            <li>Mon-Fri: 9:00am - 10:00pm</li>
-            <li>Sat: 9:00am - 11:pm</li>
-            <li>Sun: 9:00am - 2:00 pm</li>
+            <li>Mon-Fri: 9:00AM - 10:00PM</li>
+            <li>Sat: 9:00AM - 11:00PM</li>
+            <li>Sun: 9:00AM - 2:00PM</li>
           </ul>
           <ul class="footer__container__content__info">
             <li><label for="subscribe-email">Subscription</label></li>
@@ -258,5 +264,6 @@
         </div>
       </div>
     </footer>
+    <script src="vehicles.js"></script>
   </body>
 </html>
