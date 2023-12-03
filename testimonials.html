@@ -26,9 +26,7 @@
     <!-- NAVBAR SECTION -->
     <nav class="navbar" id="navbar">
       <div class="navbar__container">
-        <a href="/" class="navbar__logo">
-          <i class="fa-solid fa-car-side" id="navbar__icon"></i>CAR Rent-All</a
-        >
+        <a href="/" class="navbar__logo"> CAR Rent-All</a>
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a href="/" class="navbar__links">Home</a>
@@ -49,6 +47,10 @@
         <div class="navbar__buttons">
           <a href="/" class="navbar__button__sign-in">Sign In</a>
           <a href="/" class="navbar__button__register">Register</a>
+        </div>
+        <!-- NAVBAR RESPONSIVE -->
+        <div class="navbar__toggle">
+          <i id="navbar-icon" class="fa-solid fa-bars"></i>
         </div>
       </div>
     </nav>
@@ -97,5 +99,61 @@
         </div>
       </div>
     </section>
+    <!-- SAVE SECTION -->
+    <section class="save__section">
+      <div class="save__container">
+        <div class="save__container__title">
+          <h5>Book your rental now</h5>
+          <p><i class="fa-solid fa-phone-volume"></i>(123) 456-7890</p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="footer__section">
+      <div class="footer__container">
+        <div class="footer__container__content">
+          <ul class="footer__container__content__info">
+            <li>CAR Rent-All</li>
+            <li id="footer__info">
+              We offer a wide selection of vehicles for the best prices. Rent
+              your car today and begin your journey.
+            </li>
+            <li><a href="tel:1234567890">(123) 456-7890</a></li>
+            <li>
+              <a href="mailto: carrentall@gmail.com">CarRentAll@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="footer__container__content__info">
+            <li>Company</li>
+            <li><a href="#home">Los Angeles</a></li>
+            <li><a href="#home">Careers</a></li>
+            <li><a href="#home">Mobile</a></li>
+            <li><a href="#home">Blog</a></li>
+            <li><a href="#home">About Us</a></li>
+          </ul>
+          <ul class="footer__container__content__info">
+            <li>Working hours</li>
+            <li>Mon-Fri: 9:00AM - 10:00PM</li>
+            <li>Sat: 9:00AM - 11:00PM</li>
+            <li>Sun: 9:00AM - 2:00PM</li>
+          </ul>
+          <ul class="footer__container__content__info">
+            <li><label for="subscribe-email">Subscription</label></li>
+            <li>Subscribe to our latest news and updates</li>
+            <li>
+              <input
+                id="subscribe-email"
+                type="email"
+                placeholder="Enter Email Address"
+              />
+            </li>
+            <li>
+              <button type="submit" class="footer-submit-email">Submit</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="testimonials.js"></script>
   </body>
 </html>
