@@ -394,7 +394,6 @@ html:has(dialog[open]) {
   .about__container__content__text__cards {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     gap: 5rem;
     justify-content: center;
     align-items: center;
@@ -425,10 +424,7 @@ html:has(dialog[open]) {
     border-radius: 0.2rem;
   }
   .about__container__content__text__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: flex-start;
-    gap: 5rem;
+    gap: 2.7rem;
   }
   .about__container__content__text div:nth-child(3) {
     grid-column: 1/-1;
@@ -443,6 +439,9 @@ html:has(dialog[open]) {
   .about__container__content__img {
     width: 350px;
     border-radius: 0.2rem;
+  }
+  .about__container__content__text__cards {
+    gap: 2rem;
   }
 }
 
