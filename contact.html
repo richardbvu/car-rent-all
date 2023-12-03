@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rent-All</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/da648bf7cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar__container">
+        <a href="/" class="navbar__logo"> CAR Rent-All</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/vehicles.html" class="navbar__links">Vehicles</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/testimonials.html" class="navbar__links">Testimonials</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contact.html" class="navbar__links">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar__buttons">
+          <a href="/" class="navbar__button__sign-in">Sign In</a>
+          <a href="/" class="navbar__button__register">Register</a>
+        </div>
+        <!-- NAVBAR RESPONSIVE -->
+        <div class="navbar__toggle">
+          <i id="navbar-icon" class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTACT SECTION -->
+    <section class="contact__section">
+      <div class="contact__container">
+        <div class="contact__container__content">
+          <div class="contact__container__content__text">
+            <h5>Need additional information?</h5>
+            <p>
+              Any questions? Ask our friendly and experienced representatives
+              anything you would like to know
+            </p>
+            <a href="tel:123456789"
+              ><i class="fa-solid fa-phone-volume"></i>(123) 456-7890</a
+            >
+            <a href="mailto: carrentall@gmail.com"
+              ><i class="fa-regular fa-envelope"></i>CarRentAll@gmail.com</a
+            >
+            <a href="/"
+              ><i class="fa-solid fa-location-arrow"></i>Los Angeles, CA</a
+            >
+          </div>
+          <div class="contact__container__content__form">
+            <form>
+              <div class="contact__container__content__form__input">
+                <label for="form-name">Full Name</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  placeholder="E.g: 'John Doe'"
+                />
+              </div>
+              <div class="contact__container__content__form__input">
+                <label for="form-email">Email</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  placeholder="email@example.com"
+                />
+              </div>
+              <div class="contact__container__content__form__input">
+                <label for="form-textarea">Tell us about the issue</label>
+                <textarea
+                  name="form-textarea"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your message here"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  class="contact__container__content__form__button"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-envelope-open"></i>Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SAVE SECTION -->
+    <section class="save__section">
+      <div class="save__container">
+        <div class="save__container__title">
+          <h5>Book your rental now</h5>
+          <p><i class="fa-solid fa-phone-volume"></i>(123) 456-7890</p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="footer__section">
+      <div class="footer__container">
+        <div class="footer__container__content">
+          <ul class="footer__container__content__info">
+            <li>CAR Rent-All</li>
+            <li id="footer__info">
+              We offer a wide selection of vehicles for the best prices. Rent
+              your car today and begin your journey.
+            </li>
+            <li><a href="tel:1234567890">(123) 456-7890</a></li>
+            <li>
+              <a href="mailto: carrentall@gmail.com">CarRentAll@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="footer__container__content__info">
+            <li>Company</li>
+            <li><a href="#home">Los Angeles</a></li>
+            <li><a href="#home">Careers</a></li>
+            <li><a href="#home">Mobile</a></li>
+            <li><a href="#home">Blog</a></li>
+            <li><a href="#home">About Us</a></li>
+          </ul>
+          <ul class="footer__container__content__info">
+            <li>Working hours</li>
+            <li>Mon-Fri: 9:00AM - 10:00PM</li>
+            <li>Sat: 9:00AM - 11:00PM</li>
+            <li>Sun: 9:00AM - 2:00PM</li>
+          </ul>
+          <ul class="footer__container__content__info">
+            <li><label for="subscribe-email">Subscription</label></li>
+            <li>Subscribe to our latest news and updates</li>
+            <li>
+              <input
+                id="subscribe-email"
+                type="email"
+                placeholder="Enter Email Address"
+              />
+            </li>
+            <li>
+              <button type="submit" class="footer-submit-email">Submit</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>
