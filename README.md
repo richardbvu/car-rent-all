@@ -1,5 +1,4 @@
-About the project
-<br/>
+#About the project
 
 Website description here
 
