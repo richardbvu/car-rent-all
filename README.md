@@ -8,7 +8,7 @@ Live Demo : Here
 
 Screenshot here
 
-![Screenshot of Home Page] (car-rent-all/images/carrentalscreenshot.jpg?raw=true "Screenshot of Home Page")
+![Screenshot of Home Page] (/car-rent-all/images/carrentalscreenshot.jpg?raw=true "Screenshot of Home Page")
 
 
 # How It's Made
