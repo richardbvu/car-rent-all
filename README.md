@@ -8,7 +8,7 @@ Live Demo : Here
 
 Screenshot here
 
-![Screenshot] (https://raw.githubusercontent.com/richardvu93/car-rent-all/main/images/screenshot.jpg)
+![Screenshot] (https://raw.githubusercontent.com/richardvu93/car-rent-all/main/images/screenshot.jpg?raw=true)
 
 ![Screenshot of Home Page] (/car-rent-all/images/carrentalscreenshot.jpg?raw=true "Screenshot of Home Page")
 
