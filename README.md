@@ -7,7 +7,8 @@ A car rental website that provides an user-friendly interface for comparing and 
 Live Demo : Here
 
 Screenshot here
-![Screenshot of Home Page] (/images/car rental screenshot.jpg?raw=true "Screenshot of Home Page"
+
+![Screenshot of Home Page] (car-rent-all/images/car rental screenshot.jpg?raw=true "Screenshot of Home Page"
 
 
 # How It's Made
