@@ -1,6 +1,4 @@
 # About the project
-Write a short sentence or two about this project and what it does.
- Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
 
 A car rental website that provides an user-friendly interface for comparing and booking cars that vary in make, model, size, and price.
 
@@ -8,7 +6,7 @@ Live Demo : Here
 
 # Screenshot of the Project 
 
-## Home Page
+<h3 style="text-align: center;">Home Page</h3>
 
 ![Screenshot of Home Page](https://github.com/richardvu93/car-rent-all/blob/main/images/screenshot.jpg)
 
