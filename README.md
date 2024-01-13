@@ -6,9 +6,7 @@ A car rental website that provides an user-friendly interface for comparing and 
 
 Live Demo : Here
 
-Screenshot here
-
-![Screenshot of Home Page] (../images/screenshot.jpg)
+# Screenshot of the Project (Home Page)
 
 ![Screenshot of Home Page](https://github.com/richardvu93/car-rent-all/blob/main/images/screenshot.jpg)
 
