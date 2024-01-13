@@ -2,6 +2,8 @@
 
 A car rental website that provides an user-friendly interface for comparing and booking cars that vary in make, model, size, and price.
 
+
+
 Live Demo : Here
 
 # Screenshot of the Project 
