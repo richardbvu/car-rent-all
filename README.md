@@ -8,7 +8,7 @@ Live Demo : Here
 
 Screenshot here
 
-![Screenshot] (/images/screenshot.jpg)
+![Screenshot of Home Page] (../images/screenshot.jpg)
 
 ![Screenshot of Home Page] (/car-rent-all/images/carrentalscreenshot.jpg?raw=true "Screenshot of Home Page")
 
