@@ -10,7 +10,7 @@ Screenshot here
 
 ![Screenshot of Home Page] (../images/screenshot.jpg)
 
-![Screenshot of Home Page] (/car-rent-all/blob/main/images/screenshot.jpg)
+![Screenshot of Home Page] (/blob/main/images/screenshot.jpg)
 
 
 # How It's Made
