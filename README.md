@@ -12,10 +12,13 @@ Live Demo : Here
 
 
 # How It's Made
-Tech used: Vanilla Javascript, HTML, and CSS
+Built with : 
+Vanilla Javascript
+HTML
+CSS
 
 This project was purposely created without relying on Javascript frameworks or CSS frameworks to demonstrate my strong understanding of core fundamentals.
-From my strong understanding of core fundamentals, I can easily and quickly learn any additional frameworks required.
+Based on my strong understanding of core fundamentals, I can easily and quickly learn any additional frameworks required.
 
 # Lessons Learned:
 I've learned countless lessons that I'm proud of. Here's some lessons that I'd like to share: 
