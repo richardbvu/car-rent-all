@@ -10,7 +10,7 @@ Screenshot here
 
 ![Screenshot of Home Page] (../images/screenshot.jpg)
 
-![Screenshot of Home Page](https://github.com/richardvu93/car-rent-all/blob/main/images/screenshot.jpg?raw=true)
+![Screenshot of Home Page](https://github.com/richardvu93/car-rent-all/blob/main/images/screenshot.jpg)
 
 
 # How It's Made
