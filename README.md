@@ -6,7 +6,7 @@ Live Demo : Here
 
 # Screenshot of the Project 
 
-<h3 style="text-align: center;">Home Page</h3>
+<h3 style="text-align: center">Home Page</h3>
 
 ![Screenshot of Home Page](https://github.com/richardvu93/car-rent-all/blob/main/images/screenshot.jpg)
 
