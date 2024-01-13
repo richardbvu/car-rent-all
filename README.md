@@ -13,14 +13,17 @@ Live Demo : Here
 
 # How It's Made
 Built with : 
+
 Vanilla Javascript
+
 HTML
+
 CSS
 
 This project was purposely created without relying on Javascript frameworks or CSS frameworks to demonstrate my strong understanding of core fundamentals.
 Based on my strong understanding of core fundamentals, I can easily and quickly learn any additional frameworks required.
 
-# Lessons Learned:
+# Lessons Learned
 I've learned countless lessons that I'm proud of. Here's some lessons that I'd like to share: 
 
 * The way I write my HTML makes a large difference. For example, I wanted to create a drop-down menu without moving my logo. This caused an issue. As I was creating the responsive drop-down menu, I realized that the drop-down wasn't working as intended because all of my elements including my logo was under a single parent. Looking back, if I had my links and buttons under a single parent (excluding my logo), I could have saved myself time and prevented myself from writing additional CSS.
