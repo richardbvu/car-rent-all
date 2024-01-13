@@ -13,12 +13,9 @@ Live Demo : Here
 
 # How It's Made
 Built with : 
-
-Vanilla Javascript
-
-HTML
-
-CSS
+* Vanilla Javascript
+* HTML
+* CSS
 
 This project was purposely created without relying on Javascript frameworks or CSS frameworks to demonstrate my strong understanding of core fundamentals.
 Based on my strong understanding of core fundamentals, I can easily and quickly learn any additional frameworks required.
