@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We offer an extensive selection of vehicles to meet every need and budget. From economy cars to luxury vehicles, find the best deals on car rentals with our user-friendly interface. Compare car makes, models, sizes, and prices effortlessly to find the perfect match for your trip. Book your next car rental with us and enjoy a hassle-free experience tailored to your preferences."
+    />
     <title>CAR Rent-All</title>
     <link rel="icon" type="image/png" href="/images/icon2.png?v=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -322,14 +326,11 @@
                 </select>
               </div>
               <div class="booking__content__form__car">
-                <label for="pick-up"
-                  ><i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i
+                <label for="pick-up-location">
+                  <i class="fa-solid fa-location-dot" style="color: #000000"></i
                   >Pick up</label
                 >
-                <select name="pick-up" id="pick-up-location">
+                <select name="pick-up-location" id="pick-up-location">
                   <option selected hidden>Select pick up location</option>
                   <option value="Los Angeles">Los Angeles</option>
                   <option value="San Diego">San Diego</option>
@@ -339,14 +340,14 @@
                 </select>
               </div>
               <div class="booking__content__form__car">
-                <label for="drop-off"
+                <label for="drop-off-location"
                   ><i
                     class="fa-solid fa-location-dot"
                     style="color: #000000"
                   ></i
                   >Drop off</label
                 >
-                <select name="drop-off" id="drop-off-location">
+                <select name="drop-off-location" id="drop-off-location">
                   <option selected hidden>Select drop off location</option>
                   <option value="Los Angeles">Los Angeles</option>
                   <option value="San Diego">San Diego</option>
@@ -422,8 +423,8 @@
     <section class="vehicle__section" id="vehicle">
       <div class="vehicle__container">
         <div class="vehicle__container__title">
-          <h4>Vehicle Models</h4>
-          <h1>Rent your vehicle now</h1>
+          <h1>Vehicle Models</h1>
+          <h4>Rent your vehicle now</h4>
           <p>Choose any car you wish and begin your trip</p>
         </div>
         <div class="vehicle__container__car">
@@ -493,7 +494,7 @@
     <section class="save__section">
       <div class="save__container">
         <div class="save__container__title">
-          <h5>Begin your journey with us!</h5>
+          <h1>Begin your journey with us!</h1>
           <p>
             Save big. Any car. Any time. At your nearest major airport and local
             suppliers.
@@ -609,7 +610,7 @@
     <section class="faq__section">
       <div class="faq__container">
         <div class="faq__container__title">
-          <h5>FAQ</h5>
+          <h1>FAQ</h1>
           <h2>Frequently Asked Questions</h2>
           <p>
             Find out the answers to our frequently asked questions about Car
@@ -728,7 +729,7 @@
       </div>
     </footer>
     <!-- SCROLL UP -->
-    <a href="#" id="scroll-up"><i class="fa-solid fa-up-long"></i></a>
+    <a href="#navbar" id="scroll-up"><i class="fa-solid fa-up-long"></i></a>
     <script src="app.js"></script>
   </body>
 </html>

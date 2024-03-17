@@ -300,7 +300,6 @@ html:has(dialog[open]) {
   align-items: center;
   position: relative;
   gap: 5rem;
-
   background: var(--bg-color);
   padding: 2.5rem 6rem;
   border-radius: 0.7rem;
@@ -450,9 +449,28 @@ html:has(dialog[open]) {
   .hero__content__container {
     max-width: 475px;
   }
+  .hero__section {
+    background-color: var(--bg-color);
+    padding: 0rem 0rem;
+    background: none;
+  }
+  .hero__content__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
   .hero__content {
     padding: 4rem 2.5rem;
   }
+
   .hero__content__buttons {
     flex-direction: column;
   }
@@ -1125,11 +1143,11 @@ html:has(dialog[open]) {
   text-align: center;
 }
 
-.vehicle__container__title h4 {
+.vehicle__container__title h1 {
   font-size: 2rem;
 }
 
-.vehicle__container__title h1 {
+.vehicle__container__title h4 {
   font-size: 3rem;
   padding-bottom: 1rem;
 }
@@ -1586,7 +1604,7 @@ html:has(dialog[open]) {
   text-align: center;
 }
 
-.save__container__title h5 {
+.save__container__title h1 {
   font-size: 3rem;
   padding-bottom: 1rem;
 }
@@ -2073,7 +2091,7 @@ html:has(dialog[open]) {
   text-align: center;
 }
 
-.faq__container__title h5 {
+.faq__container__title h1 {
   font-size: 2rem;
   text-align: center;
 }
