@@ -2482,3 +2482,17 @@ html:has(dialog[open]) {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* LOAD */
+
+.load__img > * {
+  width: 600px;
+  height: auto;
+  display: none;
+}
+
+/* #load__img {
+  width: 50px;
+  height: auto;
+  display: ;
+} */
