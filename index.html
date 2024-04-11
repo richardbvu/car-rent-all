@@ -173,7 +173,7 @@
                       >Pick-up Time
                     </h5>
                     <p id="modal-pick-up-time"></p>
-                    <input type="time" /></div
+                    <input type="time" required /></div
                 ></span>
               </div>
               <div class="booking__modal__container__car__info__dates">
@@ -189,7 +189,6 @@
                     <p id="modal-drop-off-location"></p></div
                 ></span>
               </div>
-
               <div class="booking__modal__container__car__info__dates">
                 <span
                   ><div>
@@ -201,7 +200,7 @@
                       >Drop-off Time
                     </h5>
                     <p id="modal-drop-off-time"></p>
-                    <input type="time" /></div
+                    <input type="time" required /></div
                 ></span>
               </div>
             </div>
@@ -219,32 +218,48 @@
                   class="booking__modal__container__personal__form__2col__info"
                 >
                   <span
-                    ><label for="">First Name</label>
-                    <input type="text" placeholder="Enter your first name"
+                    ><label for="form-first-name">First Name</label>
+                    <input
+                      id="form-first-name"
+                      type="text"
+                      placeholder="Enter your first name"
+                      required
                   /></span>
                 </div>
                 <div
                   class="booking__modal__container__personal__form__2col__info"
                 >
                   <span
-                    ><label for="">Last Name</label>
-                    <input type="text" placeholder="Enter your last name"
+                    ><label for="form-last-name">Last Name</label>
+                    <input
+                      id="form-last-name"
+                      type="text"
+                      placeholder="Enter your last name"
+                      required
                   /></span>
                 </div>
                 <div
                   class="booking__modal__container__personal__form__2col__info"
                 >
                   <span
-                    ><label for="">Phone Number</label>
-                    <input type="text" placeholder="Enter your phone number"
+                    ><label for="form-phone-number">Phone Number</label>
+                    <input
+                      id="form-phone-number"
+                      type="text"
+                      placeholder="Enter your phone number"
+                      required
                   /></span>
                 </div>
                 <div
                   class="booking__modal__container__personal__form__2col__info"
                 >
                   <span
-                    ><label for="">Age</label>
-                    <input type="text" placeholder="Enter your age"
+                    ><label for="form-age">Age</label>
+                    <input
+                      id="form-age"
+                      type="text"
+                      placeholder="Enter your age"
+                      required
                   /></span>
                 </div>
               </div>
@@ -254,35 +269,50 @@
                   class="booking__modal__container__personal__form__1col__info"
                 >
                   <span
-                    ><label for="">Email</label>
-                    <input type="email" placeholder="Enter your email address"
+                    ><label for="form-email">Email</label>
+                    <input
+                      id="form-email"
+                      type="email"
+                      placeholder="Enter your email address"
+                      required
                   /></span>
                 </div>
                 <div
                   class="booking__modal__container__personal__form__1col__info"
                 >
                   <span
-                    ><label for="">Address</label>
-                    <input type="text" placeholder="Enter your address"
+                    ><label for="form-address">Address</label>
+                    <input
+                      id="form-address"
+                      type="text"
+                      placeholder="Enter your address"
+                      required
                   /></span>
                 </div>
               </div>
-
               <div class="booking__modal__container__personal__form__2col">
                 <div
                   class="booking__modal__container__personal__form__2col__info"
                 >
                   <span
-                    ><label for="">City</label>
-                    <input type="text" placeholder="Enter your city"
+                    ><label for="form-city">City</label>
+                    <input
+                      id="form-city"
+                      type="text"
+                      placeholder="Enter your city"
+                      required
                   /></span>
                 </div>
                 <div
                   class="booking__modal__container__personal__form__2col__info"
                 >
                   <span
-                    ><label for="">Zip Code</label>
-                    <input type="text" placeholder="Enter your zip code"
+                    ><label for="form-zip">Zip Code</label>
+                    <input
+                      id="form-zip"
+                      type="text"
+                      placeholder="Enter your zip code"
+                      required
                   /></span>
                 </div>
               </div>
@@ -290,17 +320,16 @@
                 <input type="checkbox" />
                 <p>Please send me latest news and updates</p>
               </div>
+              <div class="booking__modal__container__reserve">
+                <button
+                  type="submit"
+                  class="booking__modal__container__reserve__button"
+                  id="reserve-now-button"
+                >
+                  Reserve now
+                </button>
+              </div>
             </form>
-          </div>
-          <div class="booking__modal__container__reserve">
-            <!-- <button data-modal-close>Close</button> -->
-            <button
-              type="submit"
-              class="booking__modal__container__reserve__button"
-              id="reserve-now-button"
-            >
-              Reserve now
-            </button>
           </div>
         </div>
       </dialog>
